@@ -1,0 +1,140 @@
+/* -------- Google Font -------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* -------- Global -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.title {
+   
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/* -------- Card -------- */
+.container {
+    background: white;
+    padding: 30px 35px;
+    border-radius: 14px;
+    width: 420px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+/* -------- Heading -------- */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* -------- Menu Links -------- */
+.menu a {
+    display: block;
+    text-decoration: none;
+    background: #f4f6fb;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* -------- Forms -------- */
+form label {
+    font-size: 14px;
+    color: #555;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #667eea;
+}
+
+/* -------- Buttons -------- */
+button {
+    width: 100%;
+    padding: 13px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* -------- Table -------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #667eea;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f4f6fb;
+}
+
+/* -------- Info Box -------- */
+.result {
+    background: #f4f6fb;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* -------- Responsive -------- */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}

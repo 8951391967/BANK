@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="title">Check Balance</h3>
+<form method="post">
+    Account No: <input name="acc_no" required>
+    <button>Check</button>
+</form>
+
+{% if account %}
+<p>Name: {{ account.name }}</p>
+<p>Balance: ₹{{ account.balance }}</p>
+{% endif %}
+
+</body>
+</html>
